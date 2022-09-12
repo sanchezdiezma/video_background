@@ -178,6 +178,120 @@ body {
 .btn:active {
     transform: translateY(10px);
 }
+
+
+/* Responsive */
+
+@media (min-width: 375px) {
+    
+    body {
+        overflow: hidden;
+    }
+        
+    .header {
+        min-height: 10rem;
+        flex-direction: column;
+        justify-content: center;
+    }
+    
+    .logo {
+        width: 20rem;
+        border-bottom: 3px solid var(--ducati-red);
+    }
+    
+    .hamburger {
+        margin-top: 2rem;
+    }
+
+    .navigation {
+        background: var(--ducati-black);
+    }
+          
+    .nav_link {
+        font-size: 1.2rem;
+    }
+           
+    .nav_link:hover {
+        font-size: 1.5rem;
+    }
+    
+    .content_container {
+        top: 55%;
+        max-width: 90%;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .content_container .model_tittle {
+        font-size: 2rem;
+        text-align: center;
+    }
+    
+    .content_container .model_description {
+        font-size: 1.5rem;
+        text-align: center;
+    }
+
+    .btn {
+        font-size: 1rem;
+        align-items: center;
+    }
+        
+    
+}
+       
+    
+
+       
+        
+        
+        
+            
+            
+           
+           
+       
+        
+        
+        
+        
+   
+        
+        
+    
+       
+        
+        
+        
+       
+        
+        
+  
+        
+        
+
+    
+    
+        
+        
+        
+        
+        
+    
+    
+        
+    
+      
+    
+    
+       
+    
+    
+    
+
+    
+        
+    
   
 
 
