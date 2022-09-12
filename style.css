@@ -1,0 +1,217 @@
+@font-face {
+    font-family: 'Ducati';
+    src: url('./media/fonts/ducati.woff2');
+}
+
+:root {
+    --ducati-red: #cb1518;
+    --ducati-black: #0f0f0f;
+    --ducati-white: #f4f4f4;
+    --ducati-carbon: #666666;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    max-width: 100vw;
+    overflow-x: hidden;
+}
+
+.video_container video {
+    position: absolute;
+    left: 0%;
+    top: 0%;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.overlay {
+    position: absolute;
+    left: 0%;
+    top: 0%;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    min-height: 7rem;
+    z-index: 25;
+    padding: 0 3%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    background-image: url('./media/icons/Multistrada.svg');
+    height: 2rem;
+    width: 30rem;
+    background-repeat: no-repeat;
+
+}
+
+.hamburger {
+    background-image: url('./media/icons/open.png');
+    height: 1.5rem;
+    width: 2rem;
+    background-repeat: no-repeat;
+    background-size: cover;
+    cursor: pointer;
+}
+
+.hamburger.active {
+    background-image: url('./media/icons/close.png');
+    width: 1.5rem;
+    
+}
+
+.navigation {
+    width: 100%;
+    max-width: 100vw;
+    min-height: 100vh;
+    max-height: 100vh;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 20;
+    place-items: center;
+    display: grid;
+    background: rgba(0, 0, 0, 0.9);
+    transform: translateX(-100%);
+    transition: transform 0.2s;
+}
+
+.navigation.active {
+    transform: translateX(0);
+}
+    
+.nav_link {
+    color: white;
+    font-family: 'Ducati';
+    font-style: italic;
+    font-size: 3rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: all 0.2s;
+}
+    
+.navigation ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    min-width: 30%;
+    max-width: 50%;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 3rem;
+}
+
+.navigation ul li {
+    text-align: center;
+}
+
+.nav_link:hover {
+    text-decoration: underline var(--ducati-red);
+    font-size: 3.5rem;
+}
+
+.content_container {
+    position: absolute;
+    top: 60%;
+    left: 5%;
+    text-transform: uppercase;
+    max-width: 50%;
+    z-index: 10;
+}
+
+.content_container .model_tittle {
+    color: var(--ducati-white);
+    font-family: 'Ducati';
+    font-style: oblique;
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.model_tittle .v4{
+    color: var(--ducati-red);
+    display: inline;
+}
+
+.content_container .model_description {
+    font-family: 'Ducati';
+    font-style: oblique;
+    font-size: 2rem;
+    color: var(--ducati-red);
+    margin-bottom: 1rem;
+}
+
+.btn {
+    background: var(--ducati-red);
+    color: var(--ducati-white);
+    padding: 1rem;
+    border-radius: 5px;
+    font-family: 'Ducati';
+    font-style: oblique;
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    border: none;
+    cursor:pointer;
+    transition: all 0.2s;
+}
+
+.btn:focus {
+    outline: none;
+}
+
+.btn:active {
+    transform: translateY(10px);
+}
+  
+
+
+    
+    
+    
+
+
+    
+    
+    
+
+
+
+    
+
+
+
+
+
+
+
+
+
+    
+
+
+
+    
+
+
+
+
+
+
+
+
